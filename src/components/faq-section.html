@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,289 +7,243 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="../css/output.css">
     <title>Document</title>
 </head>
-<body>
-    <section class="faq-section-placeholder">
-        
-        <div class=" bg-gradient-to-b py-24">
-            <h2 class="text-center text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-16">FAQs</h2>
-            <div class="max-w-2xl mx-auto space-y-4">
-          
-              <!-- Q1 -->
-          <div 
-          x-data="{ open: false }" 
-          class="bg-white/10 rounded-3xl p-4 text-white">
-          <!-- Toggle -->
-          <button 
-              @click="open = !open" 
-              class="w-full flex items-center justify-between text-left">
-              <span class="text-lg font-mono">
-                  1. What is this community about?
-              </span>
-              <svg 
-                  x-show="!open" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  class="h-5 w-5" 
-                  viewBox="0 0 20 20" 
-                  fill="currentColor">
-                  <path 
-                      fill-rule="evenodd" 
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" 
-                      clip-rule="evenodd"/>
-              </svg>
-          
-              <svg 
-                  x-show="open" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  class="h-5 w-5" 
-                  viewBox="0 0 20 20" 
-                  fill="currentColor">
-                  
-                  <path 
-                      fill-rule="evenodd" 
-                      d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" 
-                      clip-rule="evenodd" 
-                  />
-              </svg>
-          </button>
-          <div 
-              x-show="open" 
-              x-collapse 
-              class="mt-2 text-sm text-gray-200 font-mono">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, cum laborum. 
-              Quaerat sint libero incidunt non voluptatum beatae possimus.
-          </div>
-          </div>
-                 <!-- Q2 -->
-          <div 
-          x-data="{ open: false }" 
-          class="bg-white/10 rounded-3xl p-4 text-white">
-          <!-- Toggle -->
-          <button 
-              @click="open = !open" 
-              class="w-full flex items-center justify-between text-left">
-              <span class="text-lg font-mono">
-                  2. What is this community about?
-              </span>
-              <svg 
-                  x-show="!open" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  class="h-5 w-5" 
-                  viewBox="0 0 20 20" 
-                  fill="currentColor">
-                  <path 
-                      fill-rule="evenodd" 
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" 
-                      clip-rule="evenodd"/>
-              </svg>
-          
-              <svg 
-                  x-show="open" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  class="h-5 w-5" 
-                  viewBox="0 0 20 20" 
-                  fill="currentColor">
-                  
-                  <path 
-                      fill-rule="evenodd" 
-                      d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" 
-                      clip-rule="evenodd" 
-                  />
-              </svg>
-          </button>
-          <div 
-              x-show="open" 
-              x-collapse 
-              class="mt-2 text-sm text-gray-200 font-mono">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, cum laborum. 
-              Quaerat sint libero incidunt non voluptatum beatae possimus.
-          </div>
-          </div>
-                 <!-- Q3 -->
-          <div 
-          x-data="{ open: false }" 
-          class="bg-white/10 rounded-3xl p-4 text-white">
-          <!-- Toggle -->
-          <button 
-              @click="open = !open" 
-              class="w-full flex items-center justify-between text-left">
-              <span class="text-lg font-mono">
-                  3. What is this community about?
-              </span>
-              <svg 
-                  x-show="!open" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  class="h-5 w-5" 
-                  viewBox="0 0 20 20" 
-                  fill="currentColor">
-                  <path 
-                      fill-rule="evenodd" 
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" 
-                      clip-rule="evenodd"/>
-              </svg>
-          
-              <svg 
-                  x-show="open" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  class="h-5 w-5" 
-                  viewBox="0 0 20 20" 
-                  fill="currentColor">
-                  
-                  <path 
-                      fill-rule="evenodd" 
-                      d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" 
-                      clip-rule="evenodd" 
-                  />
-              </svg>
-          </button>
-          <div 
-              x-show="open" 
-              x-collapse 
-              class="mt-2 text-sm text-gray-200 font-mono">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, cum laborum. 
-              Quaerat sint libero incidunt non voluptatum beatae possimus.
-          </div>
-          </div>
-                 <!-- Q4 -->
-          <div 
-          x-data="{ open: false }" 
-          class="bg-white/10 rounded-3xl p-4 text-white">
-          <!-- Toggle -->
-          <button 
-              @click="open = !open" 
-              class="w-full flex items-center justify-between text-left">
-              <span class="text-lg font-mono">
-                  4. What is this community about?
-              </span>
-              <svg 
-                  x-show="!open" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  class="h-5 w-5" 
-                  viewBox="0 0 20 20" 
-                  fill="currentColor">
-                  <path 
-                      fill-rule="evenodd" 
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" 
-                      clip-rule="evenodd"/>
-              </svg>
-          
-              <svg 
-                  x-show="open" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  class="h-5 w-5" 
-                  viewBox="0 0 20 20" 
-                  fill="currentColor">
-                  
-                  <path 
-                      fill-rule="evenodd" 
-                      d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" 
-                      clip-rule="evenodd" 
-                  />
-              </svg>
-          </button>
-          <div 
-              x-show="open" 
-              x-collapse 
-              class="mt-2 text-sm text-gray-200 font-mono">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, cum laborum. 
-              Quaerat sint libero incidunt non voluptatum beatae possimus.
-          </div>
-          </div>
-                 <!-- Q5 -->
-          <div 
-          x-data="{ open: false }" 
-          class="bg-white/10 rounded-3xl p-4 text-white">
-          <!-- Toggle -->
-          <button 
-              @click="open = !open" 
-              class="w-full flex items-center justify-between text-left">
-              <span class="text-lg font-mono">
-                  5. What is this community about?
-              </span>
-              <svg 
-                  x-show="!open" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  class="h-5 w-5" 
-                  viewBox="0 0 20 20" 
-                  fill="currentColor">
-                  <path 
-                      fill-rule="evenodd" 
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" 
-                      clip-rule="evenodd"/>
-              </svg>
-          
-              <svg 
-                  x-show="open" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  class="h-5 w-5" 
-                  viewBox="0 0 20 20" 
-                  fill="currentColor">
-                  
-                  <path 
-                      fill-rule="evenodd" 
-                      d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" 
-                      clip-rule="evenodd" 
-                  />
-              </svg>
-          </button>
-          <div 
-              x-show="open" 
-              x-collapse 
-              class="mt-2 text-sm text-gray-200 font-mono">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, cum laborum. 
-              Quaerat sint libero incidunt non voluptatum beatae possimus.
-          </div>
-          </div>
-                 <!-- Q6 -->
-          <div 
-          x-data="{ open: false }" 
-          class="bg-white/10 rounded-3xl p-4 text-white">
-          <!-- Toggle -->
-          <button 
-              @click="open = !open" 
-              class="w-full flex items-center justify-between text-left">
-              <span class="text-lg font-mono">
-                5. What is this community about?    
-              </span>
-              <svg 
-                  x-show="!open" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  class="h-5 w-5" 
-                  viewBox="0 0 20 20" 
-                  fill="currentColor">
-                  <path 
-                      fill-rule="evenodd" 
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" 
-                      clip-rule="evenodd"/>
-              </svg>
-          
-              <svg 
-                  x-show="open" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  class="h-5 w-5" 
-                  viewBox="0 0 20 20" 
-                  fill="currentColor">
-                  
-                  <path 
-                      fill-rule="evenodd" 
-                      d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" 
-                      clip-rule="evenodd" 
-                  />
-              </svg>
-          </button>
-          <div 
-              x-show="open" 
-              x-collapse 
-              class="mt-2 text-sm text-gray-200 font-mono">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, cum laborum. 
-              Quaerat sint libero incidunt non voluptatum beatae possimus.
-          </div>
-          </div>           
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-</body>
+<body> -->
+<div class="faq-section h-full">
+  <div class="py-24">
+    <h2 class="mb-16 text-center text-2xl font-bold text-white md:text-3xl lg:text-4xl">FAQs</h2>
+    <div class="mx-auto max-w-2xl space-y-4">
+      <!-- Q1 -->
+      <div x-data="{ open: false }" class="rounded-3xl bg-white/10 p-4 text-white">
+        <!-- Toggle -->
+        <button @click="open = !open" class="flex w-full items-center justify-between text-left">
+          <span class="font-mono text-lg"> 1. What is this community about? </span>
+          <svg
+            x-show="!open"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
 
-</html>
+          <svg
+            x-show="open"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+        <div x-show="open" x-collapse class="mt-2 font-mono text-sm text-gray-200">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, cum laborum. Quaerat
+          sint libero incidunt non voluptatum beatae possimus.
+        </div>
+      </div>
+      <!-- Q2 -->
+      <div x-data="{ open: false }" class="rounded-3xl bg-white/10 p-4 text-white">
+        <!-- Toggle -->
+        <button @click="open = !open" class="flex w-full items-center justify-between text-left">
+          <span class="font-mono text-lg"> 2. What is this community about? </span>
+          <svg
+            x-show="!open"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <svg
+            x-show="open"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+        <div x-show="open" x-collapse class="mt-2 font-mono text-sm text-gray-200">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, cum laborum. Quaerat
+          sint libero incidunt non voluptatum beatae possimus.
+        </div>
+      </div>
+      <!-- Q3 -->
+      <div x-data="{ open: false }" class="rounded-3xl bg-white/10 p-4 text-white">
+        <!-- Toggle -->
+        <button @click="open = !open" class="flex w-full items-center justify-between text-left">
+          <span class="font-mono text-lg"> 3. What is this community about? </span>
+          <svg
+            x-show="!open"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <svg
+            x-show="open"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+        <div x-show="open" x-collapse class="mt-2 font-mono text-sm text-gray-200">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, cum laborum. Quaerat
+          sint libero incidunt non voluptatum beatae possimus.
+        </div>
+      </div>
+      <!-- Q4 -->
+      <div x-data="{ open: false }" class="rounded-3xl bg-white/10 p-4 text-white">
+        <!-- Toggle -->
+        <button @click="open = !open" class="flex w-full items-center justify-between text-left">
+          <span class="font-mono text-lg"> 4. What is this community about? </span>
+          <svg
+            x-show="!open"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <svg
+            x-show="open"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+        <div x-show="open" x-collapse class="mt-2 font-mono text-sm text-gray-200">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, cum laborum. Quaerat
+          sint libero incidunt non voluptatum beatae possimus.
+        </div>
+      </div>
+      <!-- Q5 -->
+      <div x-data="{ open: false }" class="rounded-3xl bg-white/10 p-4 text-white">
+        <!-- Toggle -->
+        <button @click="open = !open" class="flex w-full items-center justify-between text-left">
+          <span class="font-mono text-lg"> 5. What is this community about? </span>
+          <svg
+            x-show="!open"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <svg
+            x-show="open"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+        <div x-show="open" x-collapse class="mt-2 font-mono text-sm text-gray-200">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, cum laborum. Quaerat
+          sint libero incidunt non voluptatum beatae possimus.
+        </div>
+      </div>
+      <!-- Q6 -->
+      <div x-data="{ open: false }" class="rounded-3xl bg-white/10 p-4 text-white">
+        <!-- Toggle -->
+        <button @click="open = !open" class="flex w-full items-center justify-between text-left">
+          <span class="font-mono text-lg"> 5. What is this community about? </span>
+          <svg
+            x-show="!open"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <svg
+            x-show="open"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+        <div x-show="open" x-collapse class="mt-2 font-mono text-sm text-gray-200">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, cum laborum. Quaerat
+          sint libero incidunt non voluptatum beatae possimus.
+        </div>
+      </div>
+      <!-- <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script> -->
+    </div>
+  </div>
+</div>

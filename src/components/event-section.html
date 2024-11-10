@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,239 +6,396 @@
     <title>Events | Professional Development</title>
     <link rel="stylesheet" href="../input.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="min-h-screen">
-    <main class="container mx-auto px-4 py-8 max-w-7xl">
-        <!-- Main Header -->
-        <h1 class="text-4xl md:text-5xl font-bold text-white text-center mb-16">
-            Events
-        </h1>
+</head> -->
+<!-- <body class="min-h-screen"> -->
+<div class="container mx-auto max-w-7xl px-4 py-8 h-full">
+  <!-- Main Header -->
+  <h1 class="mb-16 text-center text-4xl font-bold text-white md:text-5xl">Events</h1>
 
-        <!-- Upcoming Events Section -->
-        <section class="mb-20">
-            <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-                Our Upcoming Events
-            </h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Event Card 1 -->
-                <article class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="relative h-48 sm:h-56">
-                        <img class="w-full h-full object-cover" src="../assets/event.svg" alt="JavaScript Workshop">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-blue-600 mb-4">Getting Started with JavaScript</h3>
-                        <div class="space-y-3 text-gray-600">
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
-                                <span class="text-sm">December 15, 2024</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span class="text-sm">2:00 PM - 4:00 PM EST</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                </svg>
-                                <span class="text-sm">Virtual Event</span>
-                            </div>
-                        </div>
-                        <button class="mt-6 w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-700 transition duration-300">
-                            Register Now
-                        </button>
-                    </div>
-                </article>
+  <!-- Upcoming Events Section -->
+  <section class="mb-20">
+    <h2 class="mb-12 text-center text-3xl font-bold text-white md:text-4xl">Our Upcoming Events</h2>
 
-                <!-- Event Card 2 -->
-                <article class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="relative h-48 sm:h-56">
-                        <img class="w-full h-full object-cover" src="../assets/event.svg" alt="Advanced JavaScript">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-blue-600 mb-4">Advanced JavaScript Concepts</h3>
-                        <div class="space-y-3 text-gray-600">
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
-                                <span class="text-sm">December 20, 2024</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span class="text-sm">3:00 PM - 5:00 PM EST</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                </svg>
-                                <span class="text-sm">Virtual Event</span>
-                            </div>
-                        </div>
-                        <button class="mt-6 w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-700 transition duration-300">
-                            Register Now
-                        </button>
-                    </div>
-                </article>
-
-                <!-- Event Card 3 -->
-                <article class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="relative h-48 sm:h-56">
-                        <img class="w-full h-full object-cover" src="../assets/event.svg" alt="JavaScript Frameworks">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-blue-600 mb-4">Modern JavaScript Frameworks</h3>
-                        <div class="space-y-3 text-gray-600">
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
-                                <span class="text-sm">January 5, 2025</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span class="text-sm">1:00 PM - 3:00 PM EST</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                </svg>
-                                <span class="text-sm">Virtual Event</span>
-                            </div>
-                        </div>
-                        <button class="mt-6 w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-700 transition duration-300">
-                            Register Now
-                        </button>
-                    </div>
-                </article>
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Event Card 1 -->
+      <article
+        class="transform overflow-hidden rounded-xl bg-white shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+      >
+        <div class="relative h-48 sm:h-56">
+          <img
+            class="h-full w-full object-cover"
+            src="../assets/event.svg"
+            alt="JavaScript Workshop"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="mb-4 text-xl font-semibold text-blue-600">Getting Started with JavaScript</h3>
+          <div class="space-y-3 text-gray-600">
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              <span class="text-sm">December 15, 2024</span>
             </div>
-        </section>
-
-        <!-- Past Events Section -->
-        <section>
-            <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-                Past Events
-            </h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Past Event Card 1 -->
-                <article class="bg-white rounded-xl shadow-lg overflow-hidden opacity-75">
-                    <div class="relative h-48 sm:h-56">
-                        <img class="w-full h-full object-cover filter grayscale" src="../assets/event.svg" alt="Past JavaScript Workshop">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-blue-600 mb-4">JavaScript Fundamentals</h3>
-                        <div class="space-y-3 text-gray-600">
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
-                                <span class="text-sm">November 15, 2024</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span class="text-sm">2:00 PM - 4:00 PM EST</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                </svg>
-                                <span class="text-sm">Virtual Event</span>
-                            </div>
-                        </div>
-                        <button class="mt-6 w-full bg-gray-500 text-white py-2 px-4 rounded-lg font-medium cursor-not-allowed">
-                            Event Completed
-                        </button>
-                    </div>
-                </article>
-
-                <article class="bg-white rounded-xl shadow-lg overflow-hidden opacity-75">
-                    <div class="relative h-48 sm:h-56">
-                        <img class="w-full h-full object-cover filter grayscale" src="../assets/event.svg" alt="Past JavaScript Workshop">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-blue-600 mb-4">JavaScript Fundamentals</h3>
-                        <div class="space-y-3 text-gray-600">
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
-                                <span class="text-sm">November 15, 2024</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span class="text-sm">2:00 PM - 4:00 PM EST</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                </svg>
-                                <span class="text-sm">Virtual Event</span>
-                            </div>
-                        </div>
-                        <button class="mt-6 w-full bg-gray-500 text-white py-2 px-4 rounded-lg font-medium cursor-not-allowed">
-                            Event Completed
-                        </button>
-                    </div>
-                </article>
-
-                <article class="bg-white rounded-xl shadow-lg overflow-hidden opacity-75">
-                    <div class="relative h-48 sm:h-56">
-                        <img class="w-full h-full object-cover filter grayscale" src="../assets/event.svg" alt="Past JavaScript Workshop">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-blue-600 mb-4">JavaScript Fundamentals</h3>
-                        <div class="space-y-3 text-gray-600">
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
-                                <span class="text-sm">November 15, 2024</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span class="text-sm">2:00 PM - 4:00 PM EST</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                </svg>
-                                <span class="text-sm">Virtual Event</span>
-                            </div>
-                        </div>
-                        <button class="mt-6 w-full bg-gray-500 text-white py-2 px-4 rounded-lg font-medium cursor-not-allowed">
-                            Event Completed
-                        </button>
-                    </div>
-                </article>
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <span class="text-sm">2:00 PM - 4:00 PM EST</span>
             </div>
-        </section>
-    </main>
-</body>
-</html>
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+              <span class="text-sm">Virtual Event</span>
+            </div>
+          </div>
+          <button
+            class="mt-6 w-full rounded-lg bg-blue-600 px-4 py-2 font-medium text-white transition duration-300 hover:bg-blue-700"
+          >
+            Register Now
+          </button>
+        </div>
+      </article>
+
+      <!-- Event Card 2 -->
+      <article
+        class="transform overflow-hidden rounded-xl bg-white shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+      >
+        <div class="relative h-48 sm:h-56">
+          <img
+            class="h-full w-full object-cover"
+            src="../assets/event.svg"
+            alt="Advanced JavaScript"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="mb-4 text-xl font-semibold text-blue-600">Advanced JavaScript Concepts</h3>
+          <div class="space-y-3 text-gray-600">
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              <span class="text-sm">December 20, 2024</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <span class="text-sm">3:00 PM - 5:00 PM EST</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+              <span class="text-sm">Virtual Event</span>
+            </div>
+          </div>
+          <button
+            class="mt-6 w-full rounded-lg bg-blue-600 px-4 py-2 font-medium text-white transition duration-300 hover:bg-blue-700"
+          >
+            Register Now
+          </button>
+        </div>
+      </article>
+
+      <!-- Event Card 3 -->
+      <article
+        class="transform overflow-hidden rounded-xl bg-white shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+      >
+        <div class="relative h-48 sm:h-56">
+          <img
+            class="h-full w-full object-cover"
+            src="../assets/event.svg"
+            alt="JavaScript Frameworks"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="mb-4 text-xl font-semibold text-blue-600">Modern JavaScript Frameworks</h3>
+          <div class="space-y-3 text-gray-600">
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              <span class="text-sm">January 5, 2025</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <span class="text-sm">1:00 PM - 3:00 PM EST</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+              <span class="text-sm">Virtual Event</span>
+            </div>
+          </div>
+          <button
+            class="mt-6 w-full rounded-lg bg-blue-600 px-4 py-2 font-medium text-white transition duration-300 hover:bg-blue-700"
+          >
+            Register Now
+          </button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Past Events Section -->
+  <section>
+    <h2 class="mb-12 text-center text-3xl font-bold text-white md:text-4xl">Past Events</h2>
+
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Past Event Card 1 -->
+      <article class="overflow-hidden rounded-xl bg-white opacity-75 shadow-lg">
+        <div class="relative h-48 sm:h-56">
+          <img
+            class="h-full w-full object-cover grayscale filter"
+            src="../assets/event.svg"
+            alt="Past JavaScript Workshop"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="mb-4 text-xl font-semibold text-blue-600">JavaScript Fundamentals</h3>
+          <div class="space-y-3 text-gray-600">
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              <span class="text-sm">November 15, 2024</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <span class="text-sm">2:00 PM - 4:00 PM EST</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+              <span class="text-sm">Virtual Event</span>
+            </div>
+          </div>
+          <button
+            class="mt-6 w-full cursor-not-allowed rounded-lg bg-gray-500 px-4 py-2 font-medium text-white"
+          >
+            Event Completed
+          </button>
+        </div>
+      </article>
+
+      <article class="overflow-hidden rounded-xl bg-white opacity-75 shadow-lg">
+        <div class="relative h-48 sm:h-56">
+          <img
+            class="h-full w-full object-cover grayscale filter"
+            src="../assets/event.svg"
+            alt="Past JavaScript Workshop"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="mb-4 text-xl font-semibold text-blue-600">JavaScript Fundamentals</h3>
+          <div class="space-y-3 text-gray-600">
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              <span class="text-sm">November 15, 2024</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <span class="text-sm">2:00 PM - 4:00 PM EST</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+              <span class="text-sm">Virtual Event</span>
+            </div>
+          </div>
+          <button
+            class="mt-6 w-full cursor-not-allowed rounded-lg bg-gray-500 px-4 py-2 font-medium text-white"
+          >
+            Event Completed
+          </button>
+        </div>
+      </article>
+
+      <article class="overflow-hidden rounded-xl bg-white opacity-75 shadow-lg">
+        <div class="relative h-48 sm:h-56">
+          <img
+            class="h-full w-full object-cover grayscale filter"
+            src="../assets/event.svg"
+            alt="Past JavaScript Workshop"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="mb-4 text-xl font-semibold text-blue-600">JavaScript Fundamentals</h3>
+          <div class="space-y-3 text-gray-600">
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              <span class="text-sm">November 15, 2024</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <span class="text-sm">2:00 PM - 4:00 PM EST</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+              <span class="text-sm">Virtual Event</span>
+            </div>
+          </div>
+          <button
+            class="mt-6 w-full cursor-not-allowed rounded-lg bg-gray-500 px-4 py-2 font-medium text-white"
+          >
+            Event Completed
+          </button>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- </main> -->
+  <!-- </body> -->
+  <!-- </html> -->
+</div>
