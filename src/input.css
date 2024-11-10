@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    color: white;
-    background-image: linear-gradient(to bottom, #26272B, #923563);
+html,body{
+    height: 100%;
+    width: 100%;
 }
