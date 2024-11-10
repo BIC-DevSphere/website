@@ -5,19 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevSphere</title>
     <link rel="stylesheet" href="src/css/output.css" />
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="src/input.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/bed699dc9b.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <header>
-      <nav></nav>
-    </header>
-    <main>
+  <body class="bg-custom-gradient">
+    <main class="font-pop h-full">
+      <header>
+        <nav class="border-gray-200">
+          <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img
+                src="https://flowbite.com/docs/images/logo.svg"
+                class="h-8"
+                alt="Flowbite Logo"
+              />
+              <span class="md:-center whitespace-nowrap text-2xl font-semibold dark:text-white"
+                >Logo</span
+              >
+            </a>
+            <button
+              data-collapse-toggle="navbar-default"
+              type="button"
+              class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-default"
+              aria-expanded="false"
+              onclick="toggleMenu()"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="h-5 w-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+            <div
+              class="mt-4 hidden w-full justify-between rounded-lg px-4 py-2 md:mt-0 md:flex md:w-2/3 md:justify-between md:gap-14 dark:border-gray-700 dark:bg-gray-800 md:dark:bg-transparent"
+              id="navbar-default"
+            >
+              <ul
+                class="mt-4 flex flex-col p-1 font-medium md:mt-0 md:flex-row md:items-center md:space-x-10 md:border-0 md:text-lg"
+              >
+                <li class="min-w-[80px] p-1.5">
+                  <a
+                    href="#"
+                    class="block rounded bg-blue-700 px-3 py-2 text-white md:bg-transparent md:p-0 md:text-blue-700 dark:text-white md:dark:text-blue-500"
+                    aria-current="page"
+                    >Home</a
+                  >
+                </li>
+                <li class="min-w-[80px] p-1.5">
+                  <a
+                    href="#"
+                    class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                    >Event</a
+                  >
+                </li>
+                <li class="min-w-[80px] p-1.5">
+                  <a
+                    href="#"
+                    class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                    >About Us</a
+                  >
+                </li>
+                <li class="min-w-[80px] p-1.5">
+                  <a
+                    href="#"
+                    class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                    >FAQs</a
+                  >
+                </li>
+              </ul>
+              <button
+                class="join-btn mb-2 flex w-full items-center justify-center gap-4 rounded-lg bg-gray-400 px-3 py-2 md:max-w-[200px]"
+              >
+                <p>Join Us</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
       <!-- Assigned to Aaditya -->
-      <section class="hero-section"></section>
+      <section
+        class="hero-section mt-9 flex h-2/3 flex-col items-center md:mt-3 md:flex-row md:justify-between"
+      >
+        <div class="hero-text-left flex flex-col items-center px-4 py-1">
+          <!-- <h1
+            class="hero-text-title flex flex-col gap-3 p-2 text-center text-3xl font-bold text-white md:self-start md:text-5xl"
+          >
+            BIC DevSphere
+          </h1> -->
+          <h1
+            class="hero-text-title p-2 text-center text-3xl font-bold text-white md:self-start md:text-5xl"
+          >
+            Bubble of <span class="text-pink-500">Developers</span>
+          </h1>
+          <p class="hero-text-description mt-6 pl-2 pr-2 text-base text-gray-300 md:pl-1.5 md:pr-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, obcaecati qui pariatur
+            officia voluptate quasi iste doloremque recusandae ipsa modi laudantium aperiam quia
+            quod?
+          </p>
+          <div class="hero-btn mt-6 w-full md:w-2/3 md:self-start">
+            <div class="hero-btn-group my-4 flex justify-evenly">
+              <button
+                class="hover:border-slate flex items-center rounded-md border-slate-300 bg-slate-800 px-4 py-2 text-center text-sm text-gray-300 shadow-sm transition-all hover:scale-110 hover:shadow-lg focus:border-slate-800 focus:bg-slate-800 active:border-slate-800 active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+              >
+                Learn More
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="ml-1.5 h-4 w-4"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <button
+                class="flex items-center gap-2 rounded-md border border-transparent px-4 py-2 text-center text-sm text-gray-300 transition-all hover:bg-slate-800 focus:bg-slate-100 active:bg-slate-100 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+              >
+                <p>View on GitHub</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image-right mt-5 md:mt-0">
+          <img
+            src="src/assets/PFP.svg"
+            alt=""
+            class="w-full max-w-lg sm:w-60 md:w-72 lg:w-96 xl:w-[32rem]"
+          />
+        </div>
+      </section>
       <!-- Assigned to Aayush -->
       <section class="event-section-placeholder"></section>
       <!-- Assigned to Aaryan -->
@@ -27,8 +169,19 @@
       <section class="faq-section-placeholder">         
       </section>
     </main>
-    <footer>
-        
-    </footer>      
+    <footer></footer>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById('navbar-default');
+        const button = document.querySelector('button[aria-controls="navbar-default"]');
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+        // Toggle the menu visibility
+        menu.classList.toggle('hidden');
+
+        // Update the aria-expanded attribute
+        button.setAttribute('aria-expanded', !isExpanded);
+      }
+    </script>
   </body>
 </html>
